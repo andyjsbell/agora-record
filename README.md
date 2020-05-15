@@ -6,5 +6,7 @@ Based on initial code from https://github.com/AgoraIO/Basic-Recording
 
 ### Usage
 
+The container builds the module and publishes it.  Supply credentials for npmjs.org.
+
     docker build --build-arg user=USERNAME --build-arg email=EMAIL --build-arg password=SECRET -t agora-record .
 
