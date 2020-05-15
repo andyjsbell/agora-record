@@ -1,0 +1,15 @@
+{
+  "name": "agora-record",
+  "version": "1.0.0",
+  "description": "agora record sdk",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "agora",
+    "record"
+  ],
+  "author": "andy.bell@displaynote.com",
+  "license": "MIT"
+}
