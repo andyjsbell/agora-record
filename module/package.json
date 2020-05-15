@@ -1,7 +1,7 @@
 {
   "name": "agora-record",
-  "version": "1.0.0",
-  "description": "agora record sdk",
+  "version": "1.0.1",
+  "description": "Agora record sdk",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,6 +11,7 @@
     "record"
   ],
   "author": "andy.bell@displaynote.com",
+  "homepage": "https://github.com/andyjsbell/agora-record#readme",
   "license": "MIT",
   "repository": {
     "type" : "git",
