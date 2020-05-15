@@ -15,4 +15,5 @@ RUN node-gyp build
 RUN cp build/Release/agorasdk.node ../../module
 
 WORKDIR /usr/src/app/module
-npm login
+RUN npm-cli-login
+RUN npm publish --access public
