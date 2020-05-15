@@ -14,6 +14,8 @@ RUN node-gyp configure
 RUN node-gyp build
 RUN cp build/Release/agorasdk.node ../../module
 
+WORKDIR /usr/src
+RUN cp README.md module/
 WORKDIR /usr/src/module
 # https://github.com/postmanlabs/npm-cli-login#readme
 # IMPORTANT! NPM_USER and NPM_PASS to be set as environmental variables
