@@ -14,8 +14,12 @@ RUN node-gyp configure
 RUN node-gyp build
 RUN cp build/Release/agorasdk.node ../../module
 
-WORKDIR /usr/src/app/module
+WORKDIR /usr/src/module
 # https://github.com/postmanlabs/npm-cli-login#readme
-# IMPORTANT! PM_USER and NPM_PASS to be set as environmental variables
-RUN npm-cli-login
+# IMPORTANT! NPM_USER and NPM_PASS to be set as environmental variables
+ARG user
+ARG password
+ARG email
+
+RUN npm-cli-login -u $user -p $password -e $email
 RUN npm publish --access public
