@@ -11,5 +11,9 @@
     "record"
   ],
   "author": "andy.bell@displaynote.com",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "git@github.com:andyjsbell/agora-record.git"
+  }
 }
