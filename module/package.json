@@ -1,6 +1,6 @@
 {
   "name": "agora-record",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Agora record sdk",
   "main": "index.js",
   "scripts": {
