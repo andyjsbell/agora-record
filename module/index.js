@@ -83,7 +83,7 @@ class AgoraRecordSdk extends EventEmitter {
 
     joinChannel(key, name, uid, appid, storeFolder) {
         return new Promise((resolve, reject) => {
-            let binPath = path.join(__dirname, "./src/sdk/bin/");
+            let binPath = path.join(__dirname, "./bin/");
             fs.access(storeFolder, fs.constants.W_OK, (err) => {
                 if(err) {
                     throw "folder not writable"
