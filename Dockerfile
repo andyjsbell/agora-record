@@ -16,6 +16,8 @@ RUN cp build/Release/agorasdk.node ../../module
 
 WORKDIR /usr/src
 RUN cp README.md module/
+RUN mkdir -p module/bin
+RUN cp build-node-gyp/src/sdk/bin/AgoraCoreService module/bin
 WORKDIR /usr/src/module
 # https://github.com/postmanlabs/npm-cli-login#readme
 # IMPORTANT! NPM_USER and NPM_PASS to be set as environmental variables
@@ -23,5 +25,5 @@ ARG user
 ARG password
 ARG email
 
-RUN npm-cli-login -u $user -p $password -e $email
-RUN npm publish --access public
+#RUN npm-cli-login -u $user -p $password -e $email
+#RUN npm publish --access public
