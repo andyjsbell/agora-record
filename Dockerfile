@@ -25,5 +25,5 @@ ARG user
 ARG password
 ARG email
 
-#RUN npm-cli-login -u $user -p $password -e $email
-#RUN npm publish --access public
+RUN npm-cli-login -u $user -p $password -e $email
+RUN npm publish --access public
